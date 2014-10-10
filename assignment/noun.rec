@@ -14,36 +14,68 @@ tytöllä
 
 ; testcases for assignment 
 
-kukkon
+kukon
 	kukko+n [N(rooster)+Gen]
+
+kukkon
+	*** NONE ***
 
 kukat
 	kukka+t [N(flower)+Pl]
 
+kukkat
+	*** NONE ***
+
 viikolla
 	viikko+lla [N(week)+Ade]
+
+viikkolla
+	*** NONE ***
 
 paikan
 	paikka+n [N(place)+Gen]
 
+paikkan
+	*** NONE ***
+
 kaapista
 	kaappi+sta [N(cabinet)+Ela]
+
+kaappista
+	*** NONE ***
 
 lopun
 	loppu+n [N(end)+Gen]
 
+loppun
+	*** NONE ***
+
 kaupat
 	kauppa+t [N(shop)+Pl]
+
+kauppat
+	*** NONE ***
 
 tavan
 	tapa+n [N(custom)+Gen]
 
+tapan
+	*** NONE ***
+
 leivät
 	leipä+t [N(bread)+Pl]
+
+leipät
+	*** NONE ***
 
 avun
 	apu+n [N(help)+Gen]
 
+apun
+	*** NONE ***
+
 kammat
 	kampa+t [N(comb)+Pl]
 
+kampat
+	*** NONE ***
