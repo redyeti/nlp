@@ -11,3 +11,39 @@ tyttö
 
 tytöllä
 	tyttö+lla     [N(girl)+Ade]
+
+; testcases for assignment 
+
+kukkon
+	kukko+n [N(rooster)+Gen]
+
+kukat
+	kukka+t [N(flower)+Pl]
+
+viikolla
+	viikko+lla [N(week)+Ade]
+
+paikan
+	paikka+n [N(place)+Gen]
+
+kaapista
+	kaappi+sta [N(cabinet)+Ela]
+
+lopun
+	loppu+n [N(end)+Gen]
+
+kaupat
+	kauppa+t [N(shop)+Pl]
+
+tavan
+	tapa+n [N(custom)+Gen]
+
+leivät
+	leipä+t [N(bread)+Pl]
+
+avun
+	apu+n [N(help)+Gen]
+
+kammat
+	kampa+t [N(comb)+Pl]
+

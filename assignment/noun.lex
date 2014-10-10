@@ -141,16 +141,8 @@
 \alt NounSuff
 \gl N(help)
 
-; Exception: mp -> mm
+; Note: mp -> mm
 \lf kampa
 \lx NOUN-I
 \alt NounSuff
 \gl N(comb)
-
-; Exception: p -> p (Why is that? Rule?)
-\lf pipo
-\lx NOUN-I
-\alt NounSuff
-\lg N(cap)
-
-
