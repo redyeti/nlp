@@ -1,0 +1,20 @@
+;; this file contains the absolute minimum for pc-kimmo:
+;; no morpho-phonological rules ("spelling change" rules) are specified, 
+;; only the default correspondences: each symbol maps only to itself.
+;; this allows the lexicon to do all the work.
+
+ALPHABET
+     p t k b d g v s m n l r j h f x z c w q a e i o u y ä ö + 	 
+NULL 0
+ANY @
+BOUNDARY #
+
+;; the single "rule": the default correspondences
+
+RULE "defaults" 1 30
+    p t k b d g v s m n l r j h f x z c w q a e i o u y ä ö + @
+    p t k b d g v s m n l r j h f x z c w q a e i o u y ä ö 0 @
+ 1: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+
+
+END

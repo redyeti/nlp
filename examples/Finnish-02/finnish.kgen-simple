@@ -1,0 +1,81 @@
+; finnish.kgen
+
+; Roman Yangarber
+; Department of Computer Science
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; this file must be run through kgen before being loaded into pckimmo
+;; # kgen < finnish.kgen > finnish.rul
+;; # pckimmo
+;; pckimmo> load rules finnish.rul
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;; alphabet for kgen:
+;;; ALPHABET definition is generated automatically by kgen:
+;;; lower case letters: actual symbols appearing in surface forms
+;;; UPPER case letters: additional symbols, defined for morphological analysis
+
+;; ALPHABET
+;;   p t k b d g v x s z c m n l r y +
+;;   i e a o u
+;; NULL 0
+;; ANY  @
+;; BOUNDARY #
+
+
+;;; each SUBSET defines a group (disjunction) of symbols, used for convenience
+;;;; in writing rules
+;; all consonants:
+SUBSET Cons      p t k  b d g  v s  m n  l r  j h  f x z c w q
+;; all vowels:
+SUBSET Vow       e i   a o u  ä ö y   
+SUBSET Vback   	 a o u 
+SUBSET Vfront    ä ö y 
+SUBSET Vneut     e i 
+SUBSET Vnonback  ä ö y   e i 
+;; consonants + non-back vowels: everything except back vowels  a o u
+SUBSET CVnonb    ä ö y   e i  p t k   d g   v s m n l r j h   b f x z c w q
+
+SUBSET GStrong	 t p k
+SUBSET GWeak	 d v
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; definition of FEASIBLE pairs -- possible Lexical:Surface mappings
+
+;; default consonant mapping:
+PAIRS
+    p t k  b d g  v s  m n  l r  j h  f x z c w q
+    p t k  b d g  v s  m n  l r  j h  f x z c w q
+
+;; default vowel mapping:
+PAIRS
+    a e i o u  y ä ö  
+    a e i o u  y ä ö  
+
+;; morpheme boundary marker + is always deleted
+PAIRS
+    +
+    0
+
+;; allow back vowels to correspond to front vowels (for vowel harmony) 
+PAIRS
+    a o u 
+    ä ö y
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; the following rule has a +:0 column that allows the rule
+; to succeed after a morpheme boundary.
+
+; 
+; Vowel Fronting:
+
+;; the more complex version: fronting version-1
+
+RULE Vback:Vfront <=> # CVnonb:@* +:0 @:@* ___  ; fronting-1
+
+
+
+

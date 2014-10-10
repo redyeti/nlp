@@ -1,0 +1,92 @@
+; file for testing recognition of nouns and verbs, to be used as
+; input file for COMPARE RECOGNIZE command:
+;
+; PC-KIMMO>compare recognize Finnish/finnish.rec
+;
+; for more info, in PC-KIMMO, type:
+;     help compare
+; or
+;     help compare recognize
+;
+
+talossa
+talo+ssa     [N(house)+Ine]
+
+talossä
+*** NONE ***
+
+isällä
+isä+lla     [N(father)+Ade]
+
+isälta
+*** NONE ***
+
+isänä
+isä+na     [N(father)+Ess]
+
+taloon
+talo+Vn     [N(house)+Ill]
+
+taloön
+*** NONE ***
+
+savuun
+savu+Vn     [N(smoke)+Ill]
+
+isään
+isä+Vn     [N(father)+Ill]
+
+hissiin
+hissi+Vn     [N(lift)+Ill]
+
+hissien
+*** NONE ***
+
+hissinä
+hissi+na     [N(lift)+Ess]
+
+
+
+ajamme
+aja+mme     [V(drive)+1Pl]
+
+ajavat
+aja+vat     [V(drive)+3Pl]
+
+palavät
+*** NONE ***
+
+kysytte
+kysy+tte     [V(ask)+2Pl]
+
+kestät
+kestä+t     [V(last)+2Sg]
+
+kestävät
+kestä+vat     [V(last)+3Pl]
+
+kestävat
+*** NONE ***
+
+
+kivi
+kivI     [N(stone)+Nom]
+
+kivin
+*** NONE ***
+
+kiven
+kivI+n     [N(stone)+Gen]
+
+kivellä
+kivI+lla     [N(stone)+Ade]
+
+ovellä
+*** NONE ***
+
+ovella
+ovI+lla     [N(door)+Ade]
+
+ovi
+ovI     [N(door)+Nom]
+

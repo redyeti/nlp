@@ -1,0 +1,34 @@
+ALPHABET
+     p t k b d g v s m n l r j h f x z c w q a e i o u y Ã¤ Ã¶ + 	 
+NULL 0
+ANY @
+BOUNDARY #
+SUBSET Cons   p t k b d g v s m n l r j h f x z c w q 
+SUBSET Vow   e i a o u Ã¤ Ã¶ y 
+SUBSET Vback   	 a o u 
+SUBSET Vfront   Ã¤ Ã¶ y 
+SUBSET Vneut   e i 
+SUBSET VnonbackÃ¤Ã¶yei   Ã¤ Ã¶ y e i 
+SUBSET CVnonb   Ã¤ Ã¶ y e i p t k d g v s m n l r j h b f x z c w q 
+SUBSET GStrong   	 t p k 
+SUBSET GWeak   	 d v 
+
+RULE "defaults" 1 31
+    p t k b d g v s m n l r j h f x z c w q a e i o u y Ã¤ Ã¶ + a @
+    p t k b d g v s m n l r j h f x z c w q a e i o u y Ã¤ Ã¶ 0 Ã¤ @
+ 1: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+
+RULE "defaults" 1 3
+    o u @
+    Ã¶ y @
+ 1: 1 1 1 
+
+RULE " Vback:Vfront <=> # CVnonb:@* +:0 @:@* ___" 3 7
+
+       Vback  Vback  #  CVnonb  +  @   @
+      Vfront      @  #       @  0  @   @
+ 1:        0      1  2       1  1  1   1
+ 2:        0      1  2       2  3  2   1
+ 3:        1      0  3       3  3  3   1
+
+END
