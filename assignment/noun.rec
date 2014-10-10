@@ -1,0 +1,13 @@
+; file for testing recognition of nouns, to be used with 
+
+; input file for COMPARE RECOGNIZE command
+; for more info, in PC-KIMMO type 
+;     help compare
+; or
+;     help compare recognize
+;
+tyttö    
+	  tyttö  [N(girl)+Nom]
+
+tytöllä
+	tyttö+lla     [N(girl)+Ade]
