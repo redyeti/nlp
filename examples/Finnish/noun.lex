@@ -17,7 +17,7 @@
 \gl N(smoke)
 
 
-\lf isä
+\lf isÃ¤
 \lx NOUN-I
 \alt Case
 \gl N(father)
@@ -29,7 +29,7 @@
 \gl N(roof)
 
 
-\lf tyttö
+\lf tyttÃ¶
 \lx NOUN-I
 \alt Case
 \gl N(girl)

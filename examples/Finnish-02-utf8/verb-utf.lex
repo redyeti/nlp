@@ -16,7 +16,7 @@
 \gl V(ask)
 
 
-\lf kestÃ¤
+\lf kestÃÂ¤
 \lx VERB-I
 \alt VerbSuff
 \gl V(last)

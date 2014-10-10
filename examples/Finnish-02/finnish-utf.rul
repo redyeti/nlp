@@ -1,26 +1,26 @@
 ALPHABET
-     p t k b d g v s m n l r j h f x z c w q a e i o u y Ã¤ Ã¶ + 	 
+     p t k b d g v s m n l r j h f x z c w q a e i o u y ÃÂ¤ ÃÂ¶ + 	 
 NULL 0
 ANY @
 BOUNDARY #
 SUBSET Cons   p t k b d g v s m n l r j h f x z c w q 
-SUBSET Vow   e i a o u Ã¤ Ã¶ y 
+SUBSET Vow   e i a o u ÃÂ¤ ÃÂ¶ y 
 SUBSET Vback   	 a o u 
-SUBSET Vfront   Ã¤ Ã¶ y 
+SUBSET Vfront   ÃÂ¤ ÃÂ¶ y 
 SUBSET Vneut   e i 
-SUBSET VnonbackÃ¤Ã¶yei   Ã¤ Ã¶ y e i 
-SUBSET CVnonb   Ã¤ Ã¶ y e i p t k d g v s m n l r j h b f x z c w q 
+SUBSET VnonbackÃÂ¤ÃÂ¶yei   ÃÂ¤ ÃÂ¶ y e i 
+SUBSET CVnonb   ÃÂ¤ ÃÂ¶ y e i p t k d g v s m n l r j h b f x z c w q 
 SUBSET GStrong   	 t p k 
 SUBSET GWeak   	 d v 
 
 RULE "defaults" 1 31
-    p t k b d g v s m n l r j h f x z c w q a e i o u y Ã¤ Ã¶ + a @
-    p t k b d g v s m n l r j h f x z c w q a e i o u y Ã¤ Ã¶ 0 Ã¤ @
+    p t k b d g v s m n l r j h f x z c w q a e i o u y ÃÂ¤ ÃÂ¶ + a @
+    p t k b d g v s m n l r j h f x z c w q a e i o u y ÃÂ¤ ÃÂ¶ 0 ÃÂ¤ @
  1: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
 
 RULE "defaults" 1 3
     o u @
-    Ã¶ y @
+    ÃÂ¶ y @
  1: 1 1 1 
 
 RULE " Vback:Vfront <=> # CVnonb:@* +:0 @:@* ___" 3 7

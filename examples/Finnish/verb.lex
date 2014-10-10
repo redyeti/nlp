@@ -29,13 +29,13 @@
 \gl V(put)
 
 
-\lf peittä
+\lf peittÃ¤
 \lx VERB-I
 \alt Tense
 \gl V(cover)
 
     ;;
-\lf syö
+\lf syÃ¶
 \lx VERB-I
 \alt Tense
 \gl V(eat)

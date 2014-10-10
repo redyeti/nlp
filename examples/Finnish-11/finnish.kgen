@@ -1,0 +1,138 @@
+; finnish.kgen
+
+; Roman Yangarber
+; Department of Computer Science
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; this file must be run through kgen before being loaded into pckimmo
+;; # kgen < finnish.kgen > finnish.rul
+;; # pckimmo
+;; pckimmo> load rules finnish.rul
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;; alphabet for kgen:
+;;; ALPHABET definition is generated automatically by kgen:
+;;; lower case letters: actual symbols appearing in surface forms
+;;; UPPER case letters: additional symbols, defined for morphological analysis
+
+;; ALPHABET
+;;   p t k b d g v x s z c m n l r y +
+;;   i e a o u
+;; NULL 0
+;; ANY  @
+;; BOUNDARY #
+
+
+;;; each SUBSET defines a group (disjunction) of symbols, used for convenience
+;;;; in writing rules
+;; all consonants:
+SUBSET Cons      p t k  b d g  v s  m n  l r  j h  f x z c w q
+;; all vowels:
+SUBSET Vow       e i   a o u  ä ö y   V I
+SUBSET Vback   	 a o u  
+SUBSET Vfront    ä ö y
+SUBSET Vneut     e i 
+SUBSET Vnonback  ä ö y   e i I
+;; consonants + non-back vowels: everything except back vowels  a o u
+SUBSET CVnonb    ä ö y   e i  p t k   d g   v s m n l r j h   b f x z c w q
+
+SUBSET Tweak     d 0
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; definition of FEASIBLE pairs -- possible Lexical:Surface mappings
+
+; default consonant mapping:
+PAIRS
+    p t k  b d g  v s  m n  l r  j h  f x z c w q
+    p t k  b d g  v s  m n  l r  j h  f x z c w q
+
+;; default vowel mapping:
+PAIRS
+    a e i o u  y ä ö  
+    a e i o u  y ä ö  
+
+; morpheme boundary marker + is always deleted
+PAIRS
+    +
+    0
+
+; NON-TRIVIAL FEASIBLE PAIRS:
+
+; allow back vowels to correspond to front vowels (for vowel harmony) 
+PAIRS
+    a o u 
+    ä ö y
+
+; 
+PAIRS
+    V V V V V V V V  I I  t t
+    ä ö y a o u i e  i e  0 d
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; The following rule has a +:0 column that allows the rule
+; to succeed after a morpheme boundary.
+
+; 
+; Vowel Fronting:
+
+;; the more complex version: fronting version-1
+; RULE Vback:Vfront <=> # CVnonb:@* +:0 @:@* ___  ; fronting-1
+
+;; simpler version: split up:
+; RULE Vback:Vfront <=  # CVnonb:@* +:0 @:@* ___  ; fronting-2a
+; RULE Vback:Vfront  => # CVnonb:@* +:0 @:@* ___  ; fronting-2b
+
+;; simplify fronting-2b: simpler version of the => rule
+RULE  Vback:Vfront /<= @:Vback @:@* ___  ; fronting-3b
+
+;; in the <= rule fronting-2a: flip the tapes of the CVnonb:@ symbol 
+RULE  Vback:Vfront <=  # @:CVnonb* +:0 @:@* ___  ; fronting-3a
+
+;; ensure that a morpheme boundary was seen: 
+;; forbid back-to-front changes in the stem!
+RULE  Vback:Vfront =>  +:0 @:@* ___ ; fronting-1c
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; for Illative case: double stem-final vowel
+; combine these rules into one:
+;
+; RULE V:a <=> @:a +:0  ___
+; RULE V:e <=> @:e +:0  ___
+; RULE V:i <=> @:i +:0  ___
+; RULE V:o <=> @:o +:0  ___
+; RULE V:u <=> @:u +:0  ___
+; RULE V:y <=> @:y +:0  ___
+; RULE V:ä <=> @:ä +:0  ___
+; RULE V:ö <=> @:ö +:0  ___
+
+RULE V:{a,e,i,o,u,y,ä,ö} <=> @:{a,e,i,o,u,y,ä,ö} +:0  ___
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; for nouns like kivi/kiven vs. hissi/hissin
+RULE I:i  <=> ___ #
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; for consonant gradation: tt -> t  and t -> d
+
+; RULE t:0  <=> t ___ Vow +:0 Cons [ Cons | # ] ;; tt->t gradation version 1
+
+; this is too strong, replace by 5a:
+; RULE t:0  <=  t ___ Vow (+:0) Cons [ Cons | # ]  ;; tt->t gradation 3a
+
+;; RULE t:0 /<=  ___ t:@  ;; tt->t gradation 1c
+RULE    t:t  <=  ___ t:@  ;; t gradation 2c
+
+RULE t:t  <= ___ Vow:@ (+:0)  #             ;; tt->t gradation 1d
+RULE t:t  <= ___ Vow:@ (+:0)  Cons:@ Vow:@  ;; tt->t gradation 1e
+
+RULE t:t <=  s:@ ___  ;; tt->t gradation 1f: don't weaken after s
+
+RULE t:0  => t ___   ;; tt->t weakening 1g
+RULE t:d  => [Vow | h] ___   ;; t->d weakening 1h
+RULE t:Tweak  <=  [Vow | h | t] ___ Vow +:0 Cons [ Cons | # ]  ;; t weakening 6a

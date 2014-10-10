@@ -1,0 +1,251 @@
+; file for testing recognition of nouns and verbs, to be used as
+; input file for COMPARE RECOGNIZE command:
+;
+; PC-KIMMO>compare recognize Finnish/finnish.rec
+;
+; for more info, in PC-KIMMO, type:
+;     help compare
+; or
+;     help compare recognize
+;
+
+talossa
+talo+ssa     [N(house)+Ine]
+
+talossä
+*** NONE ***
+
+isällä
+isä+lla     [N(father)+Ade]
+
+isälta
+*** NONE ***
+
+isänä
+isä+na     [N(father)+Ess]
+
+taloon
+talo+Vn     [N(house)+Ill]
+
+taloön
+*** NONE ***
+
+savuun
+savu+Vn     [N(smoke)+Ill]
+
+isään
+isä+Vn     [N(father)+Ill]
+
+hissiin
+hissi+Vn     [N(lift)+Ill]
+
+hissien
+*** NONE ***
+
+hissinä
+hissi+na     [N(lift)+Ess]
+
+
+
+ajamme
+aja+mme     [V(drive)+1Pl]
+
+ajavat
+aja+vat     [V(drive)+3Pl]
+
+palavät
+*** NONE ***
+
+kysytte
+kysy+tte     [V(ask)+2Pl]
+
+kestät
+kestä+t     [V(last)+2Sg]
+
+kestävät
+kestä+vat     [V(last)+3Pl]
+
+kestävat
+*** NONE ***
+
+kestän
+kestä+n     [V(last)+1Sg]
+
+kesän
+*** NONE ***
+
+kesävät
+*** NONE ***
+
+
+
+kivi
+kivI     [N(stone)+Nom]
+
+kivin
+*** NONE ***
+
+kiven
+kivI+n     [N(stone)+Gen]
+
+kivellä
+kivI+lla     [N(stone)+Ade]
+
+ovellä
+*** NONE ***
+
+ovella
+ovI+lla     [N(door)+Ade]
+
+ovi
+ovI     [N(door)+Nom]
+
+
+tälö
+*** NONE ***
+
+talö
+*** NONE ***
+
+tälo
+*** NONE ***
+
+tälon
+*** NONE ***
+
+övi
+*** NONE ***
+
+övellä
+*** NONE ***
+
+
+nukutan
+nukutta+n     [V(sleepify)+1Sg]
+
+nukuttan
+*** NONE ***
+
+heitän
+heittä+n     [V(throw)+1Sg]
+
+heittän
+*** NONE ***
+
+heittävät
+heittä+vat     [V(throw)+3Pl]
+
+heittävat
+*** NONE ***
+
+nukuttavat
+nukutta+vat     [V(sleepify)+3Pl]
+
+
+kato
+*** NONE ***
+
+kao
+*** NONE ***
+
+
+heitävät
+*** NONE ***
+
+pöydällä
+pöytä+lla     [N(table)+Ade]
+
+pöytällä
+*** NONE ***
+
+pöyällä
+*** NONE ***
+
+löydän
+löytä+n     [V(find)+1Sg]
+
+löytän
+*** NONE ***
+
+löytävät
+löytä+vat     [V(find)+3Pl]
+
+
+nukudtavat
+*** NONE ***
+
+heidtävät
+*** NONE ***
+
+dyttö
+*** NONE ***
+
+tytön
+tyttö+n     [N(girl)+Gen]
+
+
+dyttö
+*** NONE ***
+
+yttö
+*** NONE ***
+
+yttön
+*** NONE ***
+
+ydtön
+*** NONE ***
+
+ytdön
+*** NONE ***
+
+heitäd
+*** NONE ***
+
+heittäd
+*** NONE ***
+
+heittä
+*** NONE ***
+
+heitä
+*** NONE ***
+
+
+;; 11
+
+nivelen
+nivel+e+n     [N(joint)+Sg+Gen]
+
+nivelessa
+*** NONE ***
+
+nivelessä
+nivel+e+ssa     [N(joint)+Sg+Ine]
+
+nivele
+*** NONE ***
+
+nivel
+nivel     [N(joint)+Nom]
+
+nainen
+nai+nen     [N(woman)+Sg.Nom]
+
+naisen
+nai+se+n     [N(woman)+Sg+Gen]
+
+naisella
+nai+se+lla     [N(woman)+Sg+Ade]
+
+naisestä
+*** NONE ***
+
+sininen
+sini+nen     [N(blue)+Sg.Nom]
+
+sinisellä
+sini+se+lla     [N(blue)+Sg+Ade]
+
+sinisesta
+*** NONE ***

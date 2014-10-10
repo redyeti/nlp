@@ -16,7 +16,7 @@
 \gl V(ask)
 
 
-\lf kestä
+\lf kestÃ¤
 \lx VERB-I
 \alt VerbSuff
 \gl V(last)

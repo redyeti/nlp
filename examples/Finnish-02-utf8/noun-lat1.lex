@@ -17,7 +17,7 @@
 \gl N(smoke)
 
 
-\lf isä
+\lf isÃ¤
 \lx NOUN-I
 \alt NounSuff
 \gl N(father)

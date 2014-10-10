@@ -29,12 +29,12 @@
 ;; all consonants:
 SUBSET Cons      p t k  b d g  v s  m n  l r  j h  f x z c w q
 ;; all vowels:
-SUBSET Vow       e i   a o u  ä ö y   
+SUBSET Vow       e i   a o u  Ã¤ Ã¶ y   
 SUBSET Vback   	 a o u 
-SUBSET Vfront    ä ö y 
+SUBSET Vfront    Ã¤ Ã¶ y 
 SUBSET Vneut     e i 
-SUBSET Vnonback  ä ö y   e i 
-SUBSET CVnonb    ä ö y   e i  p t k   d g   v s m n l r j h   b f x z c w q
+SUBSET Vnonback  Ã¤ Ã¶ y   e i 
+SUBSET CVnonb    Ã¤ Ã¶ y   e i  p t k   d g   v s m n l r j h   b f x z c w q
 
 SUBSET GStrong	 t p k
 SUBSET GWeak	 d v
@@ -50,8 +50,8 @@ PAIRS
 
 ;; default vowel mapping:
 PAIRS
-    a e i o u  y ä ö  
-    a e i o u  y ä ö  
+    a e i o u  y Ã¤ Ã¶  
+    a e i o u  y Ã¤ Ã¶  
 
 ;; morpheme boundary marker + is always deleted
 PAIRS
@@ -61,7 +61,7 @@ PAIRS
 ;; allow back vowels to correspond to front vowels (for vowel harmony) 
 PAIRS
     a o u  t 
-    ä ö y  0
+    Ã¤ Ã¶ y  0
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
