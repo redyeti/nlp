@@ -83,6 +83,74 @@
 \alt NounStemNen
 \gl N(blue)
 
+; Assignment 2
 
+; Nouns kk -> k
+
+\lf kukko
+\lx NOUN-I
+\alt NounSuff
+\gl N(rooster)
+
+\lf kukka
+\lx NOUN-I
+\alt NounSuff
+\gl N(flower)
+
+\lf viikko
+\lx NOUN-I
+\alt NounSuff
+\gl N(week)
+
+\lf paikka
+\lx NOUN-I
+\alt NounSuff
+\gl N(place)
+
+; Nouns pp -> p
+
+\lf kaappi
+\lx NOUN-I
+\alt NounSuff
+\gl N(cabinet)
+
+\lf loppu
+\lx NOUN-I
+\alt NounSuff
+\gl N(end)
+
+\lf kauppa
+\lx NOUN-I
+\alt NounSuff
+\gl N(shop)
+
+; Nouns p -> v
+
+\lf tapa
+\lx NOUN-I
+\alt NounSuff
+\gl N(custom)
+
+\lf leipä
+\lx NOUN-I
+\alt NounSuff
+\gl N(bread)
+
+\lf apu
+\lx NOUN-I
+\alt NounSuff
+\gl N(help)
+
+; Exception: mp -> mm
+\lf kampa
+\lx NOUN-I
+\alt NounSuff
+\gl N(comb)
+
+; Exception: p -> p (Why is that? Rule?)
+\lf pipo
+\lx NOUN-I
+\alt NounSuff
+\lg N(cap)
 
 
