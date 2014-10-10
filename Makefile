@@ -16,5 +16,5 @@ $(PROJECT)/finnish.rul: $(PROJECT)/finnish.kgen Makefile
 	iconv -f utf8 -t latin1 <$< | $(KGEN) | iconv -f latin1 -t utf8 >$@
 
 test: $(PROJECT)/finnish.rul $(PROJECT)/*.rec $(PROJECT)/test.tak Makefile
-	$(PCKIMMO) -r $(PROJECT)/finnish.rul -l $(PROJECT)/finnish.lex -t $(PROJECT)/test.tak
+	$(PCKIMMO) -r $(PROJECT)/finnish.rul -l $(PROJECT)/finnish.lex -t $(PROJECT)/test.tak 2>&1 | ./fixtest.py
 
