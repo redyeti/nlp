@@ -13,7 +13,7 @@ interactive: $(PROJECT)/finnish.rul Makefile
 kgen: $(PROJECT)/finnish.rul Makefile
 
 $(PROJECT)/finnish.rul: $(PROJECT)/finnish.kgen Makefile
-	! bash -c "iconv -f utf8 -t latin1 <$< | $(KGEN) | iconv -f latin1 -t utf8 >$@" 2>&1 | grep ..
+	! ( bash -c "iconv -f utf8 -t latin1 <$< | $(KGEN) | iconv -f latin1 -t utf8 >$@" 2>&1 | grep .. && rm $@ )
 
 test: $(PROJECT)/finnish.rul $(PROJECT)/*.rec $(PROJECT)/test.tak Makefile
 	$(PCKIMMO) -r $(PROJECT)/finnish.rul -l $(PROJECT)/finnish.lex -t $(PROJECT)/test.tak 2>&1 | ./fixtest.py
