@@ -146,3 +146,12 @@
 \lx NOUN-I
 \alt NounSuff
 \gl N(comb)
+
+; this is a compound. should probably better
+; be implemented by some kind of rule
+; but for the moment it's good to test if 
+; everything goes well
+\lf asuinpaikka
+\lx NOUN-I
+\alt NounSuff
+\gl N(living place)

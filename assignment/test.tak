@@ -1,3 +1,4 @@
 compare recognize finnish.rec
 compare recognize noun.rec
+compare recognize verb.rec
 exit

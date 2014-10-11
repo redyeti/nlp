@@ -149,3 +149,19 @@ RULE t:d  => [Vow | h] ___   ;; t->d weakening 1h
 ; which is equivalent to Cons:Cons, and hence does NOT include Cons:0 ...
 ; RULE t:Tweak  <=  [Vow | h | t] ___ Vow +:0 Cons [ Cons | # ]  ;; t weakening 6a
 RULE t:Tweak  <=  [Vow | h | t] ___ Vow +:0 Cons:@ [ Cons:@ | # ]  ;; t weakening 6a
+
+; ---- assignment ----
+; kk -> k
+RULE k:0 <=> k __ Vow +:0 Cons
+
+; pp -> p
+RULE p:0 <= p __ Vow +:0 Cons
+RULE p:0 => p __ Vow +:0 Cons
+
+; p -> v
+RULE p:v => __ Vow +:0 Cons
+RULE p:v <= Vow  __ Vow +:0 Cons
+RULE p:v /<= [ p | m ]  __ Vow +:0 Cons
+
+; mp -> mm
+RULE p:m <=  m  __ Vow +:0 Cons

@@ -20,10 +20,10 @@ kukon
 kukkon
 	*** NONE ***
 
-kukat
-	kukka+t [N(flower)+Pl]
+kukan
+	kukka+n [N(flower)+Gen]
 
-kukkat
+kukkan
 	*** NONE ***
 
 viikolla
@@ -50,22 +50,24 @@ lopun
 loppun
 	*** NONE ***
 
-kaupat
-	kauppa+t [N(shop)+Pl]
+kaupan
+	kauppa+n [N(shop)+Gen]
 
-kauppat
+kauppan
 	*** NONE ***
 
 tavan
-	tapa+n [N(custom)+Gen]
+	tapa+n [N(custom)+Gen] ; and also:
+	tapa+n [V(meet)+1Sg]
 
 tapan
-	*** NONE ***
+	tappa+n [V(kill)+1Sg]
+	; not *** NONE *** because of the verb tappaa
 
-leivät
-	leipä+t [N(bread)+Pl]
+leivän
+	leipä+n [N(bread)+Gen]
 
-leipät
+leipän
 	*** NONE ***
 
 avun
@@ -74,8 +76,14 @@ avun
 apun
 	*** NONE ***
 
-kammat
-	kampa+t [N(comb)+Pl]
+kamman
+	kampa+n [N(comb)+Gen]
 
-kampat
+kampan
 	*** NONE ***
+
+asuinpaikka
+	asuinpaikka [N(living place)+Nom]
+
+asuinvaikka
+	*** NONE *** ; no p->v somewhere in the middle
