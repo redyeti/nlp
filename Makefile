@@ -18,3 +18,6 @@ $(PROJECT)/finnish.rul: $(PROJECT)/finnish.kgen Makefile
 test: $(PROJECT)/finnish.rul $(PROJECT)/*.rec $(PROJECT)/test.tak Makefile
 	$(PCKIMMO) -r $(PROJECT)/finnish.rul -l $(PROJECT)/finnish.lex -t $(PROJECT)/test.tak 2>&1 | ./fixtest.py
 
+archive:
+	@git status
+	@git archive --prefix nlp/ -o nlp.tar.bz2 HEAD	
