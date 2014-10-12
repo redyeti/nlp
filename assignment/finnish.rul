@@ -11,6 +11,7 @@ SUBSET Vneut   e i
 SUBSET VnonbackäöyeiI   ä ö y e i I 
 SUBSET CVnonb   ä ö y e i p t k d g v s m n l r j h b f x z c w q 
 SUBSET Tweak   d 0 
+SUBSET Nst   p k b d g v m n l r j h f x z c w q 
 
 RULE "defaults" 1 31
     p t k b d g v s m n l r j h f x z c w q a e i o u y ä ö + a @
@@ -141,82 +142,121 @@ RULE " t:Tweak  <=  [Vow | h | t] ___ Vow +:0 Cons:@ [ Cons:@ | # ]" 6 9
  6:       0  0  0    2  1     0  0  0   1
 
 
-RULE " k:0 <=> k __ Vow +:0 Cons" 8 7
+RULE " p:0 <= p __ Vow +:0 Cons:@ [ Cons:@ | # ]" 6 8
 
-      k  k  k  Vow  +  Cons   @
-      0  @  k  Vow  0  Cons   @
- 1:   0  2  2    1  1     1   1
- 2:   6  3  3    1  1     1   1
- 3:   6  3  3    4  1     1   1
- 4:   0  2  2    1  5     1   1
- 5:   0  0  0    1  1     0   1
- 6.   0  0  0    7  0     0   0
- 7.   0  0  0    0  8     0   0
- 8.   0  2  2    0  0     1   0
+      p  p  p  Vow  +  Cons  #   @
+      0  @  p  Vow  0     @  #   @
+ 1:   1  2  2    1  1     1  1   1
+ 2:   1  3  3    1  1     1  1   1
+ 3:   1  3  3    4  1     1  1   1
+ 4:   1  2  2    1  5     1  1   1
+ 5:   6  6  6    1  1     6  1   1
+ 6:   0  0  0    1  1     0  0   1
 
 
-RULE " p:0 <= p __ Vow +:0 Cons" 5 7
+RULE " p:0 => p __ Vow +:0 Cons:@ [ Cons:@ | # ]" 6 7
 
-      p  p  p  Vow  +  Cons   @
-      0  @  p  Vow  0  Cons   @
- 1:   1  2  2    1  1     1   1
- 2:   1  3  3    1  1     1   1
- 3:   1  3  3    4  1     1   1
- 4:   1  2  2    1  5     1   1
- 5:   1  0  0    1  1     0   1
-
-
-RULE " p:0 => p __ Vow +:0 Cons" 5 6
-
-      p  p  Vow  +  Cons   @
-      0  p  Vow  0  Cons   @
- 1:   0  2    1  1     1   1
- 2:   3  2    1  1     1   1
- 3.   0  0    4  0     0   0
- 4.   0  0    0  5     0   0
- 5.   0  2    0  0     1   0
+      p  p  Vow  +  Cons  #   @
+      0  p  Vow  0     @  #   @
+ 1:   0  2    1  1     1  1   1
+ 2:   3  2    1  1     1  1   1
+ 3.   0  0    4  0     0  0   0
+ 4.   0  0    0  5     0  0   0
+ 5.   0  6    0  0     6  0   0
+ 6.   0  2    0  0     1  1   0
 
 
-RULE " p:v => __ Vow +:0 Cons" 4 5
+RULE " p:v => __ Vow +:0 Cons:@ [ Cons:@ | # ]" 5 6
 
-      p  Vow  +  Cons   @
-      v  Vow  0  Cons   @
- 1:   2    1  1     1   1
- 2.   0    3  0     0   0
- 3.   0    0  4     0   0
- 4.   0    0  0     1   0
+      p  Vow  +  Cons  #   @
+      v  Vow  0     @  #   @
+ 1:   2    1  1     1  1   1
+ 2.   0    3  0     0  0   0
+ 3.   0    0  4     0  0   0
+ 4.   0    0  0     5  0   0
+ 5.   0    0  0     1  1   0
 
 
-RULE " p:v <= Vow  __ Vow +:0 Cons" 5 7
+RULE " p:v <= Vow  __ Vow +:0 Cons:@ [ Cons:@ | # ]" 6 7
 
-      p  p  Vow  +  Cons  p   @
-      v  @  Vow  0  Cons  p   @
+      p  p  Vow  +  Cons  #   @
+      v  @  Vow  0     @  #   @
  1:   1  1    2  1     1  1   1
- 2:   1  3    2  1     1  3   1
+ 2:   1  3    2  1     1  1   1
  3:   1  1    4  1     1  1   1
- 4:   1  3    2  5     1  3   1
- 5:   0  1    2  1     0  0   1
+ 4:   1  3    2  5     1  1   1
+ 5:   6  6    2  1     6  1   1
+ 6:   0  0    2  1     0  0   1
 
 
-RULE " p:v /<= [ p | m ]  __ Vow +:0 Cons" 5 7
+RULE " p:v /<= [ p | m ]  __ Vow +:0 Cons:@ [ Cons:@ | # ]" 6 8
 
-      m  p  Vow  +  Cons  p   @
-      m  v  Vow  0  Cons  p   @
- 1:   2  1    1  1     1  2   1
- 2:   2  3    1  1     1  2   1
- 3:   2  1    4  1     1  2   1
- 4:   2  1    1  5     1  2   1
- 5:   0  0    1  1     0  0   1
+      m  p  Vow  +  Cons  #  p   @
+      m  v  Vow  0     @  #  p   @
+ 1:   2  1    1  1     1  1  2   1
+ 2:   2  3    1  1     1  1  2   1
+ 3:   2  1    4  1     1  1  2   1
+ 4:   2  1    1  5     1  1  2   1
+ 5:   6  6    1  1     6  1  6   1
+ 6:   0  0    1  1     0  0  0   1
 
 
-RULE " p:m <=  m  __ Vow +:0 Cons" 5 9
+RULE " p:m <=  m  __ Vow +:0 Cons:@ [ Cons:@ | # ]" 6 8
 
-      p  p  m  Vow  +  Cons  p  p   @
-      m  @  m  Vow  0  Cons  p  v   @
- 1:   1  1  2    1  1     1  1  1   1
- 2:   1  3  2    1  1     1  3  3   1
- 3:   1  1  2    4  1     1  1  1   1
- 4:   1  1  2    1  5     1  1  1   1
- 5:   0  1  0    1  1     0  0  0   1
+      p  p  m  Vow  +  Cons  #   @
+      m  @  m  Vow  0     @  #   @
+ 1:   1  1  2    1  1     1  1   1
+ 2:   1  3  2    1  1     1  1   1
+ 3:   1  1  2    4  1     1  1   1
+ 4:   1  1  2    1  5     1  1   1
+ 5:   6  6  6    1  1     6  1   1
+ 6:   0  0  0    1  1     0  0   1
+
+
+RULE " k:0 => __ Vow +:0 Cons:@ [ Cons:@ | # ]" 5 6
+
+      k  Vow  +  Cons  #   @
+      0  Vow  0     @  #   @
+ 1:   2    1  1     1  1   1
+ 2.   0    3  0     0  0   0
+ 3.   0    0  4     0  0   0
+ 4.   0    0  0     5  0   0
+ 5.   0    0  0     1  1   0
+
+
+RULE " k:0 <= [ Vow | Nst ] __ Vow +:0 Cons:@ [ Cons:@ | # ]" 6 8
+
+      k  k  Nst  Vow  +  Cons  #   @
+      0  @  Nst  Vow  0     @  #   @
+ 1:   1  2    2    2  1     1  1   1
+ 2:   1  3    2    2  1     1  1   1
+ 3:   1  3    2    4  1     1  1   1
+ 4:   1  3    2    2  5     1  1   1
+ 5:   6  6    6    2  1     6  1   1
+ 6:   0  0    0    2  1     0  0   1
+
+
+RULE " k:0 /<= s __ Vow +:0 Cons:@ [ Cons:@ | # ]" 6 7
+
+      s  k  Vow  +  Cons  #   @
+      s  0  Vow  0     @  #   @
+ 1:   2  1    1  1     1  1   1
+ 2:   2  3    1  1     1  1   1
+ 3:   2  1    4  1     1  1   1
+ 4:   2  1    1  5     1  1   1
+ 5:   6  6    1  1     6  1   1
+ 6:   0  0    1  1     0  0   1
+
+
+RULE " k:0 /<= t __ Vow +:0 Cons:@ [ Cons:@ | # ]" 6 7
+
+      t  k  Vow  +  Cons  #   @
+      t  0  Vow  0     @  #   @
+ 1:   2  1    1  1     1  1   1
+ 2:   2  3    1  1     1  1   1
+ 3:   2  1    4  1     1  1   1
+ 4:   2  1    1  5     1  1   1
+ 5:   6  6    1  1     6  1   1
+ 6:   0  0    1  1     0  0   1
 
 END

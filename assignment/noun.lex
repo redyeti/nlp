@@ -155,3 +155,27 @@
 \lx NOUN-I
 \alt NounSuff
 \gl N(living place)
+
+; k -> 0
+\lf leuka
+\lx NOUN-I
+\alt NounSuff
+\gl N(chin)
+
+\lf nahka
+\lx NOUN-I
+\alt NounSuff
+\gl N(leather)
+
+\lf kulku
+\lx NOUN-I
+\alt NounSuff
+\gl N(motion)
+
+; Note: tk -> tk
+\lf matka
+\lx NOUN-I
+\alt NounSuff
+\gl N(trip)
+
+

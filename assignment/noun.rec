@@ -87,3 +87,26 @@ asuinpaikka
 
 asuinvaikka
 	*** NONE *** ; no p->v somewhere in the middle
+
+leuan
+	leuka+n [N(chin)+Gen]
+
+leukan
+	*** NONE ***
+
+nahan
+	nahka+n [N(leather)+Gen]
+
+nahkan
+	*** NONE ***
+
+kulun
+	kulku+n [N(motion)+Gen]
+
+kulkun
+	*** NONE ***
+
+matkan
+	matka+n [N(trip)+Gen]
+
+	

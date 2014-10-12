@@ -95,12 +95,26 @@
 \alt VerbSuff
 \gl V(meet)
 
-; counterexamples
-
-; mp instead of p
+; mp -> mm
 \lf ampu
 \lx VERB-I
 \alt VerbSuff
 \gl V(shoot)
 
+; k -> 0
+\lf koke
+\lx VERB-I
+\alt VerbSuff
+\gl V(suffer)
+
+\lf jaka
+\lx VERB-I
+\alt VerbSuff
+\gl V(share)
+
+; sk -> sk
+\lf laske
+\lx VERB-I
+\alt VerbSuff
+\gl V(lower)
 

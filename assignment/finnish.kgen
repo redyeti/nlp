@@ -39,6 +39,8 @@ SUBSET CVnonb    ä ö y   e i  p t k   d g   v s m n l r j h   b f x z c w q
 
 SUBSET Tweak     d 0
 
+SUBSET Nst      p k  b d g  v  m n  l r  j h  f x z c w q
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; definition of FEASIBLE pairs -- possible Lexical:Surface mappings
@@ -152,16 +154,27 @@ RULE t:Tweak  <=  [Vow | h | t] ___ Vow +:0 Cons:@ [ Cons:@ | # ]  ;; t weakenin
 
 ; ---- assignment ----
 ; kk -> k
-RULE k:0 <=> k __ Vow +:0 Cons
+; Old rule for kk -> k
+; New rule for kk -> k AND k -> 0 see below
+; RULE k:0 <=> k __ Vow +:0 Cons:@ [ Cons:@ | # ]
 
 ; pp -> p
-RULE p:0 <= p __ Vow +:0 Cons
-RULE p:0 => p __ Vow +:0 Cons
+RULE p:0 <= p __ Vow +:0 Cons:@ [ Cons:@ | # ]
+RULE p:0 => p __ Vow +:0 Cons:@ [ Cons:@ | # ]
 
 ; p -> v
-RULE p:v => __ Vow +:0 Cons
-RULE p:v <= Vow  __ Vow +:0 Cons
-RULE p:v /<= [ p | m ]  __ Vow +:0 Cons
+RULE p:v => __ Vow +:0 Cons:@ [ Cons:@ | # ]
+RULE p:v <= Vow  __ Vow +:0 Cons:@ [ Cons:@ | # ]
+RULE p:v /<= [ p | m ]  __ Vow +:0 Cons:@ [ Cons:@ | # ]
 
 ; mp -> mm
-RULE p:m <=  m  __ Vow +:0 Cons
+RULE p:m <=  m  __ Vow +:0 Cons:@ [ Cons:@ | # ]
+
+; kk -> k AND k -> 0
+RULE k:0 => __ Vow +:0 Cons:@ [ Cons:@ | # ]
+; Probably, there is a more elegant way to do this, as to add a new subset
+; of all consonants except s and t (Nst) ...
+RULE k:0 <= [ Vow | Nst ] __ Vow +:0 Cons:@ [ Cons:@ | # ]
+RULE k:0 /<= s __ Vow +:0 Cons:@ [ Cons:@ | # ]
+RULE k:0 /<= t __ Vow +:0 Cons:@ [ Cons:@ | # ]
+
