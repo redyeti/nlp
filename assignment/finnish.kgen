@@ -40,6 +40,7 @@ SUBSET CVnonb    ä ö y   e i  p t k   d g   v s m n l r j h   b f x z c w q
 SUBSET Tweak     d 0
 
 SUBSET Nst      p k  b d g  v  m n  l r  j h  f x z c w q
+SUBSET NVow       e i   a o  ä ö y   V I
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -175,7 +176,9 @@ RULE p:m <=  m  __ Vow +:0 Cons:@ [ Cons:@ | # ]
 RULE k:0 => __ Vow +:0 Cons:@ [ Cons:@ | # ]
 ; Probably, there is a more elegant way to do this, as to add a new subset
 ; of all consonants except s and t (Nst) ...
-RULE k:0 <= [ Vow | Nst ] __ Vow +:0 Cons:@ [ Cons:@ | # ]
+RULE k:0 <= [ NVow | Nst ] __ Vow +:0 Cons:@ [ Cons:@ | # ]
+RULE k:0 <= [ Vow | Nst ] __ NVow +:0 Cons:@ [ Cons:@ | # ]
 RULE k:0 /<= s __ Vow +:0 Cons:@ [ Cons:@ | # ]
 RULE k:0 /<= t __ Vow +:0 Cons:@ [ Cons:@ | # ]
 
+RULE k:v <= u __ u +:0 Cons:@ [ Cons:@ | # ]
