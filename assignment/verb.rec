@@ -53,12 +53,6 @@ amppun
 ampun
 	*** NONE ***
 
-koen
-	koke+n [V(suffer)+1Sg]
-
-koken
-	*** NONE ***
-
 jaan
 	jaka+n [V(share)+1Sg]
 
@@ -90,15 +84,15 @@ annan
 ;vingun
 ;	vinku+n [V(sqeal)+1Sg]
 ;
-;aikon
-;	*** NONE ***
-;
-;aion
-;	aiko+n [V(plan)+1Sg]
-;
-;koken
-;	*** NONE ***
-;
-;koen
-;	koke+n [V(experience)+1Sg]
-;
+aikon
+	*** NONE ***
+
+aion
+	aiko+n [V(plan)+1Sg]
+
+koken
+	*** NONE ***
+
+koen
+	koke+n [V(experience)+1Sg]
+

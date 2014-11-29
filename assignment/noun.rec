@@ -128,27 +128,27 @@ rannan
 ;helsingin
 ;	helsinki+n [N(helsinki)+Gen]
 ;
-;taikan
-;	*** NONE ***
-;
-;taian
-;	taika+n [N(taika)+Gen]
-;
-;sikan
-;	*** NONE ***
-;
-;sian
-;	sika+n [N(pig)+Gen]
-;
-;pukun
-;	*** NONE ***
-;
-;puvun
-;	puku+n [N(suit)+Gen]
-;
-;sukun
-;	*** NONE ***
-;
-;suvun
-;	suku+n [N(genus)+Gen]
+taikan
+	*** NONE ***
+
+taian
+	taika+n [N(magic)+Gen]
+
+sikan
+	*** NONE ***
+
+sian
+	sika+n [N(pig)+Gen]
+
+pukun
+	*** NONE ***
+
+puvun
+	puku+n [N(suit)+Gen]
+
+sukun
+	*** NONE ***
+
+suvun
+	suku+n [N(genus)+Gen]
 
