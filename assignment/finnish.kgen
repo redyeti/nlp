@@ -152,7 +152,8 @@ RULE t:d  => [Vow | h] ___   ;; t->d weakening 1h
 ; RULE t:Tweak  <=  [Vow | h | t] ___ Vow +:0 Cons [ Cons | # ]  ;; t weakening 6a
 RULE t:Tweak  <=  [Vow | h | t] ___ Vow +:0 Cons:@ [ Cons:@ | # ]  ;; t weakening 6a
 
-; ---- assignment ----
+RULE t:n <=> n __ Vow +:0 
+
 ; kk -> k
 ; Old rule for kk -> k
 ; New rule for kk -> k AND k -> 0 see below

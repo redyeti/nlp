@@ -178,4 +178,9 @@
 \alt NounSuff
 \gl N(trip)
 
+; Part I
+\lf ranta
+\lx NOUN-I
+\alt NounSuff
+\gl N(beach)
 

@@ -118,3 +118,8 @@
 \alt VerbSuff
 \gl V(lower)
 
+\lf anta
+\lx VERB-I
+\alt VerbSuff
+\gl V(give)
+
