@@ -193,3 +193,23 @@
 \lx NOUN-I
 \alt NounSuff
 \gl N(pond)
+
+\lf taika
+\lx NOUN-I
+\alt NounSuff
+\gl N(magic)
+
+\lf sika
+\lx NOUN-I
+\alt NounSuff
+\gl N(pig)
+
+\lf suku
+\lx NOUN-I
+\alt NounSuff
+\gl N(genus)
+
+\lf puku
+\lx NOUN-I
+\alt NounSuff
+\gl N(suit)

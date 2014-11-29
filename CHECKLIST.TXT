@@ -4,7 +4,8 @@
 [x] nt -> nn
 [X] mp -> mm
 [ ] nk -> ng
-[ ] k  -> 0 | (j) | v
+[x] k  -> 0 | (j) | v
+    NOTE: no implementation for j yet
 
 [ ] ltt -> lt
 [ ] rtt -> rt

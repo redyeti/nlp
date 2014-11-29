@@ -101,12 +101,6 @@
 \alt VerbSuff
 \gl V(shoot)
 
-; k -> 0
-\lf koke
-\lx VERB-I
-\alt VerbSuff
-\gl V(suffer)
-
 \lf jaka
 \lx VERB-I
 \alt VerbSuff
@@ -123,3 +117,12 @@
 \alt VerbSuff
 \gl V(give)
 
+\lf aiko
+\lx VERB-I
+\alt VerbSuff
+\gl V(plan)
+
+\lf koke
+\lx VERB-I
+\alt VerbSuff
+\gl V(experience)
