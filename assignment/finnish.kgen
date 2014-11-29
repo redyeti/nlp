@@ -171,6 +171,7 @@ RULE p:v /<=  p __ Vow +:0 Cons:@ [ Cons:@ | # ]
 
 ; mp -> mm
 RULE p:m <=  m  __ Vow +:0 Cons:@ [ Cons:@ | # ]
+RULE i:e <= m p:m __ Vow +:0 Cons:@ [ Cons:@ | # ]
 
 ; kk -> k AND k -> 0
 RULE k:0 => __ Vow +:0 Cons:@ [ Cons:@ | # ]
