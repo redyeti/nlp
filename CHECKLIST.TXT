@@ -3,7 +3,7 @@
 
 [x] nt -> nn
 [X] mp -> mm
-[ ] nk -> ng
+[X] nk -> ng
 [x] k  -> 0 | (j) | v
     NOTE: no implementation for j yet
 
