@@ -109,4 +109,46 @@ kulkun
 matkan
 	matka+n [N(trip)+Gen]
 
-	
+; Part I
+rantan
+	*** NONE ***
+
+rannan
+	ranta+n [N(beach)+Gen]
+
+;lampin
+;	*** NONE ***
+;
+;lammen
+;	lampi+n [N(pond)+Gen]
+;
+;helsinkin
+;	*** NONE ***
+;
+;helsingin
+;	helsinki+n [N(helsinki)+Gen]
+;
+;taikan
+;	*** NONE ***
+;
+;taian
+;	taika+n [N(taika)+Gen]
+;
+;sikan
+;	*** NONE ***
+;
+;sian
+;	sika+n [N(pig)+Gen]
+;
+;pukun
+;	*** NONE ***
+;
+;puvun
+;	puku+n [N(suit)+Gen]
+;
+;sukun
+;	*** NONE ***
+;
+;suvun
+;	suku+n [N(genus)+Gen]
+
