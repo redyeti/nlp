@@ -39,7 +39,7 @@ SUBSET CVnonb    ä ö y   e i  p t k   d g   v s m n l r j h   b f x z c w q
 
 SUBSET Tweak     d 0
 
-SUBSET Nst      p k  b d g  v  m n  l r  j h  f x z c w q
+SUBSET Nst      p k  b d g  v  m  l r  j h  f x z c w q
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -166,7 +166,7 @@ RULE p:0 => p __ Vow +:0 Cons:@ [ Cons:@ | # ]
 ; p -> v
 RULE p:v => __ Vow +:0 Cons:@ [ Cons:@ | # ]
 RULE p:v <= Vow  __ Vow +:0 Cons:@ [ Cons:@ | # ]
-RULE p:v /<= [ p | m ]  __ Vow +:0 Cons:@ [ Cons:@ | # ]
+RULE p:v /<=  p __ Vow +:0 Cons:@ [ Cons:@ | # ]
 
 ; mp -> mm
 RULE p:m <=  m  __ Vow +:0 Cons:@ [ Cons:@ | # ]
@@ -178,4 +178,6 @@ RULE k:0 => __ Vow +:0 Cons:@ [ Cons:@ | # ]
 RULE k:0 <= [ Vow | Nst ] __ Vow +:0 Cons:@ [ Cons:@ | # ]
 RULE k:0 /<= s __ Vow +:0 Cons:@ [ Cons:@ | # ]
 RULE k:0 /<= t __ Vow +:0 Cons:@ [ Cons:@ | # ]
+
+RULE k:g <= n __ Vow +:0
 

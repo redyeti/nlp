@@ -184,3 +184,12 @@
 \alt NounSuff
 \gl N(beach)
 
+\lf helsinki
+\lx NOUN-I
+\alt NounSuff
+\gl N(helsinki)
+
+\lf lampi
+\lx NOUN-I
+\alt NounSuff
+\gl N(pond)
