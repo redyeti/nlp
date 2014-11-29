@@ -126,3 +126,8 @@
 \lx VERB-I
 \alt VerbSuff
 \gl V(experience)
+
+\lf vinku
+\lx VERB-I
+\alt VerbSuff
+\gl V(squeal)
