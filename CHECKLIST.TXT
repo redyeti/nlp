@@ -7,10 +7,10 @@
 [x] k  -> 0 | (j) | v
     NOTE: no implementation for j yet
 
-[ ] ltt -> lt
-[ ] rtt -> rt
-[ ] lkk -> lk
-[ ] rkk -> rk
+[ ] ltt -> lt kiltti (kilt)
+[ ] rtt -> rt kartta (map)
+[ ] lkk -> lk palkka (salary)
+[ ] rkk -> rk myrkky (poison)
 [ ] rpp -> rp
 [ ] lpp -> lp
 
