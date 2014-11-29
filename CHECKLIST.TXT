@@ -13,6 +13,7 @@
 [ ] rkk -> rk myrkky (poison)
 [ ] rpp -> rp
 [ ] lpp -> lp
+[ ] mpp -> mp kamppi
 
 [ ] Part 2
 ==========
