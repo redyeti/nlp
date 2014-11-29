@@ -11,8 +11,8 @@
 [ ] rtt -> rt
 [ ] lkk -> lk
 [ ] rkk -> rk
-[ ] rpp -> rp
-[ ] lpp -> lp
+[ ] rpp -> rp karppi(common carp)
+[X] lpp -> lp helppo(help)
 
 [ ] Part 2
 ==========
