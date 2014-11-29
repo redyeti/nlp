@@ -7,13 +7,13 @@
 [x] k  -> 0 | (j) | v
     NOTE: no implementation for j yet
 
-[ ] rpp -> rp karppi(common carp)
-[ ] lpp -> lp helppo(help)
-[ ] ltt -> lt kiltti (kilt)
-[ ] rtt -> rt kartta (map)
-[ ] lkk -> lk palkka (salary)
-[ ] rkk -> rk myrkky (poison)
-[ ] mpp -> mp kamppi
+[x] rpp -> rp karppi(common carp)
+[x] lpp -> lp helppo(help)
+[x] ltt -> lt kiltti (kilt)
+[x] rtt -> rt kartta (map)
+[x] lkk -> lk palkka (salary)
+[x] rkk -> rk myrkky (poison)
+[x] mpp -> mp kamppi
 
 [ ] Part 2
 ==========

@@ -213,3 +213,38 @@
 \lx NOUN-I
 \alt NounSuff
 \gl N(suit)
+
+\lf karppi
+\lx NOUN-I
+\alt NounSuff
+\gl N(carp)
+
+\lf helppo
+\lx NOUN-I
+\alt NounSuff
+\gl N(help)
+
+\lf kiltti
+\lx NOUN-I
+\alt NounSuff
+\gl N(kilt)
+
+\lf kartta
+\lx NOUN-I
+\alt NounSuff
+\gl N(map)
+
+\lf palkka
+\lx NOUN-I
+\alt NounSuff
+\gl N(salary)
+
+\lf myrkky
+\lx NOUN-I
+\alt NounSuff
+\gl N(poison)
+
+\lf kamppi
+\lx NOUN-I
+\alt NounSuff
+\gl N(kamppi)
