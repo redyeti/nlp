@@ -200,8 +200,20 @@ kampin
 puhelimen
 	puheli+me+n [N(telephone)+Sg+Gen]
 
+puhelinen
+	*** NONE ***
+
 laitumen
 	laidu+me+n   [N(pasture)+Sg+Gen]
+
+laidunen
+	*** NONE ***
+
+laidumn
+	*** NONE ***
+
+laidunn
+	*** NONE ***
 
 ;maan
 ;	maa+n [N(land)+Gen]
@@ -218,12 +230,12 @@ valas
 valaan
 	vala+V+n [N(whale)+Sg+Gen]
 
-;kysymys
-;	kysymyKs [N(question)+Nom]
-;
-;kysymyksen
-;	kysymyKs+n [N(question)+Gen]
-;
+kysymys
+	kysymyKs [N(question)+Nom]
+
+kysymyksen
+	kysymyKs+n [N(question)+Gen]
+
 ;tulevaisuus
 ;
 ;tulevaisuuden
