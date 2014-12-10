@@ -82,6 +82,12 @@
 \alt End
 \gl  +Ill
 
+;; Partitive
+\lf  +Ta
+\lx  OBLIQUE
+\alt End
+\gl  +Part
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; 11
@@ -131,7 +137,7 @@
 
 ; for nouns of class KYSYMY(K)S/EN
 
-\lf +e
+\lf +E
 \lx STEM-X
 \alt Oblique
 \gl +Sg

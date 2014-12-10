@@ -261,7 +261,7 @@
 \alt NounStemN
 \gl N(pasture)
 
-\lf maa
+\lf maaH
 \lx NOUN-I
 \alt NounSuff
 \gl N(land)

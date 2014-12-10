@@ -215,14 +215,14 @@ laidumn
 laidunn
 	*** NONE ***
 
-;maan
-;	maa+n [N(land)+Gen]
-;
-;maaan
-;	*** NONE ***
+maan
+	maaH+n [N(land)+Gen]
 
-;maahan
-;	maa+Vn [N(land)+Ill]
+maaan
+	*** NONE ***
+
+maahan
+	maaH+Vn [N(land)+Ill]
 
 valas
 	vala+s [N(whale)+Sg.Nom]
@@ -244,3 +244,32 @@ tulevaisuus
 
 tulevaisuuden
 	tulevaisuuS+e+n [N(future)+Sg+Gen]
+
+; Part 4
+
+taloa
+	talo+Ta [N(house)+Part]
+
+puhelinta
+	puhelin+Ta [N(telephone)+Part]
+
+maata
+	maaH+Ta [N(land)+Part]
+
+valasta
+	valas+Ta [N(whale)+Part]
+
+kysymystä
+	kysymyKs+Ta [N(question)+Part]
+
+kysymykstä
+	*** NONE ***
+
+kysymyksä
+	*** NONE ***
+
+kysykysä
+	*** NONE ***
+
+tulevaisuutta
+	tulevaisuuS+Ta [N(future)+Part]

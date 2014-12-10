@@ -10,7 +10,7 @@ ALTERNATION Oblique         OBLIQUE               ; NUMBER - not yet handled
 ALTERNATION NounStemE       NOMINATIVE STEM-E     ; NUMBER - not yet handled
 ALTERNATION NounStemNen     NOMINATIVE-NEN  STEM-SE    ; NUMBER - not yet handled
 ALTERNATION NounStemN       NOMINATIVE-N  STEM-ME    ; NUMBER - not yet handled
-ALTERNATION NounStemX       NOMINATIVE  STEM-X    ; NUMBER - not yet handled
+ALTERNATION NounStemX       NOMINATIVE  STEM-X   ; NUMBER - not yet handled
 ALTERNATION NounStemV       NOMINATIVE-S  STEM-V    ; NUMBER - not yet handled
                             
 ALTERNATION VerbSuff        CAUSATIVE PERSONNUM    ; TENSE - not yet handled

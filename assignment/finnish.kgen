@@ -27,7 +27,7 @@
 ;;; each SUBSET defines a group (disjunction) of symbols, used for convenience
 ;;;; in writing rules
 ;; all consonants:
-SUBSET Cons      p t k  b d g  v s  m n  l r  j h  f x z c w q
+SUBSET Cons      S p t k  b d g  v s  m n  l r  j h  f x z c w q
 ;; all vowels:
 SUBSET Vow       e i   a o u  ä ö y   V I
 SUBSET Vback   	 a o u  
@@ -70,8 +70,8 @@ PAIRS
 
 ; 
 PAIRS
-    S K V V V V V V V V  I I  t t
-    d k ä ö y a o u i e  i e  0 d
+    E T H S K V V V V V V V V  I I  t t
+    e t 0 d k ä ö y a o u i e  i e  0 d
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -121,7 +121,8 @@ RULE  Vback:Vfront =>  +:0 @:@* ___ ; fronting-1c
 ; RULE V:ä <=> @:ä +:0  ___
 ; RULE V:ö <=> @:ö +:0  ___
 
-RULE V:{a,e,i,o,u,y,ä,ö} <=> @:{a,e,i,o,u,y,ä,ö} +:0  ___
+;RULE V:{a,e,i,o,u,y,ä,ö} <=> @:{a,e,i,o,u,y,ä,ö} +:0  ___
+RULE V:{a,e,i,o,u,y,ä,ö} <=> @:{a,e,i,o,u,y,ä,ö} (H:@) +:0  ___
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -189,6 +190,11 @@ RULE k:v <= u __ u +:0 Cons:@ [ Cons:@ | # ]
 ; d -> t
 RULE d:t <=> __ Vow +:0 m e +:0 
 
+RULE  H:h <=> __ +:0 Vow
+
 ; Part 3
-RULE K:0 <=> __ Cons #
+RULE K:0 <=> __ Cons [ # | +:0 T:@ ]
 RULE S:s <=> __ #
+
+RULE T:0 <=> Vow +:0 __
+RULE E:0 <=> __ +:0 T:@
