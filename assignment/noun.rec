@@ -213,8 +213,17 @@ laitumen
 ;	maa+Vn [N(land)+Ill]
 
 valas
-	vala+s [N(whale)+Nom]
+	vala+s [N(whale)+Sg.Nom]
 
 valaan
-	vala+V+n [N(whale)+Gen]
+	vala+V+n [N(whale)+Sg+Gen]
 
+;kysymys
+;	kysymyKs [N(question)+Nom]
+;
+;kysymyksen
+;	kysymyKs+n [N(question)+Gen]
+;
+;tulevaisuus
+;
+;tulevaisuuden
