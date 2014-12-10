@@ -270,3 +270,13 @@
 \lx NOUN-I
 \alt NounStemV
 \gl N(whale)
+
+\lf kysymyKs
+\lx NOUN-I
+\alt NounStemX
+\gl N(question)
+
+\lf tulevaisuuS
+\lx NOUN-I
+\alt NounStemX
+\gl N(future)

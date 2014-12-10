@@ -128,3 +128,10 @@
 \lx STEM-V
 \alt Oblique
 \gl +Sg
+
+; for nouns of class KYSYMY(K)S/EN
+
+\lf +e
+\lx STEM-X
+\alt Oblique
+\gl +Sg

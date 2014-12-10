@@ -234,8 +234,13 @@ kysymys
 	kysymyKs [N(question)+Nom]
 
 kysymyksen
-	kysymyKs+n [N(question)+Gen]
+	kysymyKs+e+n [N(question)+Sg+Gen]
 
-;tulevaisuus
-;
-;tulevaisuuden
+tulevaisuud
+	*** NONE ***
+
+tulevaisuus
+	tulevaisuuS [N(future)+Nom]
+
+tulevaisuuden
+	tulevaisuuS+e+n [N(future)+Sg+Gen]
