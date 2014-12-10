@@ -4,7 +4,8 @@
 ;           ----            ----------------------
 ALTERNATION Begin           NOUN-I  NOUN-E NOUN-N  NOUN-NEN VERB-I ;; deleted: NOUN-S
 
-ALTERNATION NounSuff        NOMINATIVE OBLIQUE    ; NUMBER - not yet handled
+ALTERNATION NounSuff        NOMINATIVE PLURAL OBLIQUE    
+ALTERNATION NounPl	    NOMINATIVE OBLIQUE
 ALTERNATION Oblique         OBLIQUE               ; NUMBER - not yet handled
 
 ALTERNATION NounStemE       NOMINATIVE STEM-E     ; NUMBER - not yet handled

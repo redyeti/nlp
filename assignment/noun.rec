@@ -253,3 +253,16 @@ taloa
 maata
 	maaH+Ta [N(land)+Part]
 
+; Part 5
+
+talot
+	talo+P [N(house)+Pl+Nom]
+
+taloilla
+	talo+P+lla [N(house)+Pl+Ade]
+
+kukot
+	kukko+P [N(rooster)+Pl+Nom]
+
+kukoilla
+	kukko+P+lla [N(rooster)+Pl+Ade]

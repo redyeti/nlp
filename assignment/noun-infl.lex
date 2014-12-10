@@ -7,6 +7,12 @@
 ;; Noun inflection class I:
 ;;
 
+;; Plural
+\lf  +P
+\lx  PLURAL
+\alt NounPl
+\gl  +Pl
+
 ;; Nominative
 \lf  0
 \lx  NOMINATIVE

@@ -27,7 +27,7 @@
 ;;; each SUBSET defines a group (disjunction) of symbols, used for convenience
 ;;;; in writing rules
 ;; all consonants:
-SUBSET Cons      S p t k  b d g  v s  m n  l r  j h  f x z c w q
+SUBSET Cons      P S p t k  b d g  v s  m n  l r  j h  f x z c w q
 ;; all vowels:
 SUBSET Vow       e i   a o u  ä ö y   V I
 SUBSET Vback   	 a o u  
@@ -70,8 +70,8 @@ PAIRS
 
 ; 
 PAIRS
-    T H S K V V V V V V V V  I I  t t
-    t 0 d k ä ö y a o u i e  i e  0 d
+    P T H S K V V V V V V V V  I I  t t
+    t t 0 d k ä ö y a o u i e  i e  0 d
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -180,6 +180,7 @@ RULE k:0 => __ Vow +:0 Cons:@ [ Cons:@ | # ]
 ; of all consonants except s and t (Nst) ...
 RULE k:0 <= [ NVow | Nst ] __ Vow +:0 Cons:@ [ Cons:@ | # ]
 RULE k:0 <= [ Vow | Nst ] __ NVow +:0 Cons:@ [ Cons:@ | # ]
+RULE k:0 <= k __ Vow +:0 P
 RULE k:0 /<= s __ Vow +:0 Cons:@ [ Cons:@ | # ]
 RULE k:0 /<= t __ Vow +:0 Cons:@ [ Cons:@ | # ]
 
@@ -197,3 +198,6 @@ RULE K:0 <=> __ Cons [ # | +:0 T:@ ]
 RULE S:s <=> __ #
 
 RULE T:0 <=> Vow +:0 __
+
+; Part 5
+RULE P:i <=> __ +:0
