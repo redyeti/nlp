@@ -107,3 +107,24 @@
 \alt Oblique
 \gl +Sg
 
+; for nouns of class PUHELI/N/MEN
+\lf +n
+\lx NOMINATIVE-N
+\alt End
+\gl +Sg.Nom
+
+\lf +me
+\lx STEM-ME
+\alt Oblique
+\gl +Sg
+
+; for nouns of class VALA/S/V
+\lf +s
+\lx NOMINATIVE-S
+\alt End
+\gl +Sg.Nom
+
+\lf +V
+\lx STEM-V
+\alt Oblique
+\gl +Sg

@@ -185,3 +185,6 @@ RULE k:0 /<= t __ Vow +:0 Cons:@ [ Cons:@ | # ]
 RULE k:g <= n __ Vow +:0
 
 RULE k:v <= u __ u +:0 Cons:@ [ Cons:@ | # ]
+
+; d -> t
+RULE d:t <=> __ Vow +:0 m e +:0 

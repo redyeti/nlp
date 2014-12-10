@@ -248,3 +248,25 @@
 \lx NOUN-I
 \alt NounSuff
 \gl N(kamppi)
+
+; Part II
+
+\lf puheli
+\lx NOUN-N
+\alt NounStemN
+\gl N(telephone)
+
+\lf laidu
+\lx NOUN-N
+\alt NounStemN
+\gl N(pasture)
+
+\lf maa
+\lx NOUN-I
+\alt NounSuff
+\gl N(land)
+
+\lf vala
+\lx NOUN-I
+\alt NounStemV
+\gl N(whale)

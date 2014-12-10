@@ -2,13 +2,15 @@
 
 ;;;;;;;;;;; NAME:           COMPRISING SUBLEXICONS:
 ;           ----            ----------------------
-ALTERNATION Begin           NOUN-I  NOUN-E  NOUN-NEN  VERB-I
+ALTERNATION Begin           NOUN-I  NOUN-E NOUN-N  NOUN-NEN VERB-I ;; deleted: NOUN-S
 
 ALTERNATION NounSuff        NOMINATIVE OBLIQUE    ; NUMBER - not yet handled
 ALTERNATION Oblique         OBLIQUE               ; NUMBER - not yet handled
 
 ALTERNATION NounStemE       NOMINATIVE STEM-E     ; NUMBER - not yet handled
 ALTERNATION NounStemNen     NOMINATIVE-NEN  STEM-SE    ; NUMBER - not yet handled
+ALTERNATION NounStemN       NOMINATIVE-N  STEM-ME    ; NUMBER - not yet handled
+ALTERNATION NounStemV       NOMINATIVE-S  STEM-V    ; NUMBER - not yet handled
                             
 ALTERNATION VerbSuff        CAUSATIVE PERSONNUM    ; TENSE - not yet handled
 
