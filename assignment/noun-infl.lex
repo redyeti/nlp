@@ -137,7 +137,7 @@
 
 ; for nouns of class KYSYMY(K)S/EN
 
-\lf +E
+\lf +e
 \lx STEM-X
 \alt Oblique
 \gl +Sg

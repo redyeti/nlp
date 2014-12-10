@@ -70,8 +70,8 @@ PAIRS
 
 ; 
 PAIRS
-    E T H S K V V V V V V V V  I I  t t
-    e t 0 d k ä ö y a o u i e  i e  0 d
+    T H S K V V V V V V V V  I I  t t
+    t 0 d k ä ö y a o u i e  i e  0 d
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -197,4 +197,3 @@ RULE K:0 <=> __ Cons [ # | +:0 T:@ ]
 RULE S:s <=> __ #
 
 RULE T:0 <=> Vow +:0 __
-RULE E:0 <=> __ +:0 T:@

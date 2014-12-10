@@ -250,26 +250,6 @@ tulevaisuuden
 taloa
 	talo+Ta [N(house)+Part]
 
-puhelinta
-	puhelin+Ta [N(telephone)+Part]
-
 maata
 	maaH+Ta [N(land)+Part]
 
-valasta
-	valas+Ta [N(whale)+Part]
-
-kysymystä
-	kysymyKs+Ta [N(question)+Part]
-
-kysymykstä
-	*** NONE ***
-
-kysymyksä
-	*** NONE ***
-
-kysykysä
-	*** NONE ***
-
-tulevaisuutta
-	tulevaisuuS+Ta [N(future)+Part]
